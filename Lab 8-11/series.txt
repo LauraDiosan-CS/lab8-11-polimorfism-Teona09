@@ -1,0 +1,5 @@
+Sony/AAA/101/2
+Sony/AAA/202/orange-vodafone
+Samsung/SS/303/orange-digi
+Samsung/ZZZ/250/6
+Cronos/CCC/400/8

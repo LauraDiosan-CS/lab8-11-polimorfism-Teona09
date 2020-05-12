@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Teona Tanasa\Desktop\Lab 8-11\Lab 8-11\</FILEPATH>
+      <FILENAME>RepositoryFileCSV.h</FILENAME>
+      <LINE>26</LINE>
+      <COLUMN>40</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'RepositoryFileCSV&lt;Series *&gt;::s' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>RepositoryFileCSV&lt;Series *&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$RepositoryFileCSV@PAVSeries@@@@QAE@XZ</DECORATED>
+    <FUNCLINE>26</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>RepositoryFileCSV&lt;Series *&gt;::s</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>
