@@ -12,7 +12,7 @@ int main() {
 	test_Service();
 	cout << "everything looks fine" << '\n' << '\n';
 	cout << "Choose your files type: \n";
-	cout << "1.csv \t\t 2.txt \n";
+	cout << "1.csv \t 2.txt \n";
 	short op;
 	cin >> op;
 	RepositoryFile<Series*>* repositorySeries = new RepositoryFileCSV<Series*>;

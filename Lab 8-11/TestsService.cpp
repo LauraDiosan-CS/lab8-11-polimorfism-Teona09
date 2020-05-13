@@ -27,5 +27,10 @@ void test_Service() {
 	service.updateSeries(s3, s5);
 	assert(service.getSeriesFromPos(2) == s5);
 	assert(service.findSeries(s3) == false);
+	list<Series*> allSeries = service.getAllSeries();
+	assert(allSeries.size() == 3);
+	list<Series*> foundSeries = service.getAllSeriesFromProducer("producer3");
+	assert(foundSeries.size() == 1);
+	assert(foundSeries.front() == s5);
 	delete s1, s2, s3, s4, s5;
 }
