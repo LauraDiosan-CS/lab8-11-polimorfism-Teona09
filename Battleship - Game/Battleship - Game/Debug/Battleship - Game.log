@@ -1,0 +1,5 @@
+﻿  Fleet.cpp
+C:\Users\Teona Tanasa\source\repos\Battleship - Game\Battleship - Game\Fleet.cpp(11,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Teona Tanasa\source\repos\Battleship - Game\Battleship - Game\Fleet.cpp(13,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Teona Tanasa\source\repos\Battleship - Game\Battleship - Game\Fleet.cpp(80,23): warning C4018: '<': signed/unsigned mismatch
+  Battleship - Game.vcxproj -> C:\Users\Teona Tanasa\source\repos\Battleship - Game\Debug\Battleship - Game.exe
