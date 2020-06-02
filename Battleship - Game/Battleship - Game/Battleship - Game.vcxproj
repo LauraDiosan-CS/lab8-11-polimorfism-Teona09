@@ -20,9 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{EF1C082F-8884-43A8-B5C8-A492044B0165}</ProjectGuid>
-    <Keyword>Win32Proj</Keyword>
-    <RootNamespace>BattleshipGame</RootNamespace>
+    <ProjectGuid>{D637AC20-E774-4B22-B336-C862878DB7D2}</ProjectGuid>
+    <RootNamespace>Battleshipgame</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -84,11 +83,9 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -98,8 +95,6 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -112,13 +107,11 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -130,8 +123,6 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -147,20 +138,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ComputerPlayer.h" />
+    <ClInclude Include="Fleet.h" />
+    <ClInclude Include="Airplane.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Game2.h" />
+    <ClInclude Include="HumanPlayer.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Square.h" />
+    <ClInclude Include="Tests_Domain.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="Battleship - Game.cpp" />
+    <ClCompile Include="ComputerPlayer.cpp" />
     <ClCompile Include="Fleet.cpp" />
-    <ClCompile Include="GameTable.cpp" />
-    <ClCompile Include="Ship.cpp" />
+    <ClCompile Include="Airplane.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Game2.cpp" />
+    <ClCompile Include="HumanPlayer.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="Tests_Domain.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Fleet.h" />
-    <ClInclude Include="FireResult.h" />
-    <ClInclude Include="GameTable.h" />
-    <ClInclude Include="Ship.h" />
-    <ClInclude Include="Square.h" />
-    <ClInclude Include="Tests_Domain.h" />
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

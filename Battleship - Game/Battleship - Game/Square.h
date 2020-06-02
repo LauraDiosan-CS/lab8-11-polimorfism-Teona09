@@ -3,13 +3,13 @@ class Square{
 private:
 	int x;
 	int y; 
+	char state; // 'O' - not attacked
+				// 'M' - attacked and miss
+				// 'H' - attacked and hit
+				// 'D' - attacked and the ship is down
+	char occupied;	// 'C' - clear, no airplane
+					// 'A' - airplane
 public:
-	enum State {
-		NOT_ATTACKED=1,
-		ATTACKED_MISS=0,
-		ATTACKED_HIT=2
-	};
-
 	Square();
 	Square(int x, int y);
 	static Square makeSquare(int x, int y);
@@ -17,6 +17,10 @@ public:
 	void setX(int x);
 	int getY() const;
 	void setY(int y);
+	char getState()const;
+	void setState(char state);
+	char getOccupied() const;
+	void setOccupied();
 	bool operator==(const Square& other)const;
 	bool operator!=(const Square& other)const;
 	Square& operator=(const Square& other);
